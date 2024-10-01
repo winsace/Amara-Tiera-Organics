@@ -1,0 +1,227 @@
+/* General reset and body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light earth tone background for a fresh, clean feel */
+}
+
+/* Container for centralized content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    background-color: #e6e6fa; /* Lavender for an organic look */
+    color: #333;
+    padding: 20px;
+}
+
+/* Flexbox layout for header */
+.header-left,
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-left {
+    flex: 1;
+}
+
+nav {
+    flex: 1;
+}
+
+.header-right {
+    flex: 1;
+    justify-content: flex-end; /* Align items to the right */
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none; /* Remove bullet points from the navigation */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center navigation items */
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: #333; /* Dark text for contrast */
+    text-decoration: none;
+}
+
+/* Hero section styling */
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* White text for readability */
+}
+
+.hero-text-container {
+    background-color: rgba(128, 128, 128, 0.7); /* Grey container for readability */
+    padding: 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 4vw; /* Responsive font size based on viewport width */
+}
+
+/* Product section styling */
+.products {
+    padding: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    grid-gap: 20px; /* Space between products */
+}
+
+/* Individual product styling */
+.product {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.product img {
+    width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 10px 10px 0 0; /* Rounded corners at the top */
+}
+
+.product h3 {
+    margin-top: 0;
+    color: #6b4226; /* Earthy brown for product titles */
+}
+
+.product p {
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+.btn-cart {
+    background-color: #6b4226; /* Earthy brown for a natural tone */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+}
+
+/* Our Story section */
+.our-story {
+    padding: 20px;
+}
+
+.video-container {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    position: relative;
+    overflow: hidden; /* Hide overflow */
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none; /* Remove default border */
+}
+
+/* What's New section */
+.whats-new {
+    padding: 20px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    grid-gap: 20px;
+}
+
+.news {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.news img {
+    width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.news h3 {
+    margin-top: 0;
+    color: #6b4226; /* Earthy brown for news titles */
+}
+
+/* Instagram section */
+.instagram {
+    padding: 20px;
+}
+
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    grid-gap: 20px;
+}
+
+.instagram-post {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.instagram-post img {
+    width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Footer styling */
+footer {
+    background-color: #e6e6fa; /* Lavender for the footer */
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 6vw; /* Smaller heading on mobile */
+    }
+
+    .hero-text-container {
+        padding: 10px; /* Less padding on mobile */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Stack navigation items on mobile */
+    }
+
+    header nav ul li {
+        margin: 10px 0; /* Spacing for stacked items */
+    }
+}
